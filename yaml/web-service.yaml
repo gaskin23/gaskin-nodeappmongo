@@ -8,9 +8,9 @@ metadata:
 spec:
   selector:
     name: web 
-  type: LoadBalancer
+  type: NodePort
   ports:
-   - name: http
-     port: 3000
-     targetPort: 3000
-     protocol: TCP
+   - protocol: TCP
+     port: 80
+     targetPort: 80
+     nodePort: 30001

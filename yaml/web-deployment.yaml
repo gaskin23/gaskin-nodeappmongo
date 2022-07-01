@@ -18,7 +18,7 @@ spec:
           image: gaskin23/nodeappmongo:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 3000
+            - containerPort: 80
           env:
             - name: "DBHOST"
               value: "mongodb://db-service:27017"
